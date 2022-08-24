@@ -1,0 +1,494 @@
+/* COLORS */
+Growing-Up-is-Hard: #fffae9
+Adventures of Charli the Dog: #bae6ff
+Alive Again: #611f1d
+Mister and I: #cf83a9
+Dream of You: #e0b67c
+Fill Up the Jar: #b4c2cb
+Love, Lola: #f0e4dc
+Mee Nois Sampaguita: #f8f4fc
+Unseen: #faa383
+Frog and Crow: #fffcf4
+
+html {
+  height: 100%
+}
+body {
+  background-image: url(Background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.bookshelf {
+  width: 1024px;
+  height: 685px;
+  margin: 0 auto;
+  border: 22px #b26655 solid;
+  overflow: hidden;
+  background-image: linear-gradient(#573e47, #6d4a4e 220px, #cf815a 220px, #975952 222px, #b26655 222px, #975952 228px, #b26655 228px, #b26655 230px);
+  background-size: 10px 230px;
+  box-shadow: 0px 1000px 0px 500px #5f2b1e;
+}
+
+.item {
+	background-repeat: no-repeat;
+	background-size: 120%;
+	background-position: left top;
+	pointer-events: none;
+}
+
+#books {
+	background-image: url(10.png);
+	width: 22%;
+	height: 22%;
+	bottom: -40px;
+	margin-left: -10px;
+  margin-top: 79px;
+  float: left;
+}
+
+#frame-1 {
+	background-image: url(14.png);
+	width: 30%;
+	height: 30%;
+	bottom: -40px;
+	margin-left: -55px;
+  margin-top: 28px;
+  float: left;
+}
+
+#plant-1 {
+  background-image: url(11.png);
+  width: 30%;
+	height: 30%;
+	bottom: -40px;
+	margin-left: -105px;
+  margin-top: 6.5px;
+  float: left;
+}
+
+#frame-2 {
+  background-image: url(13.png);
+  width: 30%;
+	height: 30%;
+	bottom: -40px;
+  margin-left: 31px; 
+  margin-top: -195px;
+  float: left;
+}
+
+#plant-2 {
+  background-image: url(12.png);
+  width: 23%;
+	height: 23%;
+	bottom: -40px;
+	margin-left: -29px;
+  margin-top: 58px;
+  float: left;
+}
+
+#bottle {
+  background-image: url(15.png);
+  width: 18%;
+	height: 24%;
+	bottom: -40px;
+	margin-left: -53px;
+  margin-top: 93px;
+  float: left;
+}
+
+
+.top {
+  height: 170px;
+  width: 35px;
+  float: left;
+  color: white;
+  font-size: 0.9em;
+  font-family: Verdana, sans-serif;
+  transition: transform 0.4s ease;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.topz {
+  height: 200px;
+  width: 40px;
+  float: left;
+  color: white;
+  font-size: 0.9em;
+  font-family: Verdana, sans-serif;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  transition: transform 0.4s ease;
+}
+
+/* margin top: higher number it gets lower hehe */
+.mid {
+  height: 170px;
+  width: 35px;
+  float: left;
+  color: white;
+  font-size: 0.9em;
+  font-family: Verdana, sans-serif;
+  transition: transform 0.4s ease;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-top: 36.5px;
+}
+
+.midz {
+  height: 200px;
+  width: 40px;
+  float: left;
+  color: white;
+  font-size: 0.9em;
+  font-family: Verdana, sans-serif;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-top: 6.5px;
+  transition: transform 0.4s ease;
+}
+
+.midzz {
+  height: 40px;
+  width: 200px;
+  float: left;
+  color: white;
+  font-size: 0.6em;
+  font-family: Verdana, sans-serif;
+  margin-left: -80px;
+  margin-bottom: 1px;
+  margin-top: 166.5px;
+  transition: scale(1.05);
+  transition: transform 0.4s ease;
+}
+
+.bot {
+  height: 170px;
+  width: 35px;
+  float: left;
+  color: white;
+  font-size: 0.9em;
+  font-family: Verdana, sans-serif;
+  transition: transform 0.4s ease;
+  margin-left: 5px;
+  margin-bottom: 50px;
+  margin-top: 44px;
+}
+
+.botz {
+  height: 200px;
+  width: 40px;
+  float: left;
+  color: white;
+  font-size: 0.9em;
+  font-family: Verdana, sans-serif;
+  margin-left: 5px;
+  margin-bottom: 50px;
+  margin-top: 14px;
+  transition: transform 0.4s ease;
+}
+
+.botsz {
+  height: 200px;
+  width: 40px;
+  float: left;
+  color: white;
+  font-size: 0.9em;
+  font-family: Verdana, sans-serif;
+  margin-left: 5px;
+  margin-bottom: 50px;
+  margin-top: 14px;
+  transition: transform 0.4s ease;
+}
+
+.left-tilt {
+  transform: rotate(327deg);
+  margin-left: -1px;
+  translate: 15px;
+  height: 200px;
+}
+
+.left-tilts {
+  transform: rotate(342deg);
+  margin-left: 23px;
+  margin-top: 4px;
+  translate: 15px;
+  height: 200px;
+}
+
+.right-tilt {
+  transform: rotate(19deg);
+  margin-left: 10px;
+  margin-top: 21px;
+  translate: 15px;
+  height: 28%
+}
+
+
+.lying {
+  margin-top: 84.5px;
+  margin-left: 11px;
+}
+
+
+.topz:hover{
+  transform: scale(1.05);
+}
+
+.midz:hover{
+  transform: scale(1.05);
+}
+
+.midzz:hover{
+  transform: scale(1.05);
+}
+
+.botsz:hover{
+  transform: scale(1.05);
+}
+
+.botz:hover{
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+/* COLORS OF THE BOOKS & FONTS */
+
+.book-black {
+  background-color: #3d3d39;
+  border-left: 2px solid #31312e;
+  border-right: 3px solid #51514d;
+}
+
+.book-red {
+  background-color: #914747;
+  border-left: 2px solid #744040;
+  border-right: 2px solid #9c5a5a;
+}
+
+.book-blue {
+  background-color: #21537c;
+  border-left: 2px solid #1b4465;
+  border-right: 2px solid #386589;
+}
+
+.book-orange {
+  background-color: #f4d49d;
+  border-left: 2px solid #dd3f2a;
+  border-right: 2px solid #dd3f2a;
+}
+
+.book-green {
+  background-color: #327a1e;
+  border-left: 2px solid #296519;
+  border-right: 2px solid #478835;
+}
+
+
+
+
+.color-adv {
+  background-color: #bae6ff;
+  border-left: 30px #fadacb;
+  border-right: 9px solid #b9e7ff;
+}
+
+.color-adv h2{
+  padding: 0;
+  font-size: 1em;
+  transform-origin: 0% 0%;
+  transform: rotate(0.25turn) translateY(-35px);
+  width: 170px;
+  color:#c9605d;
+}
+
+.color-adv h3 {
+  padding: 0;
+  font-size: 0.66em;
+  transform-origin: 0 0;
+  transform: rotate(0.25turn) translateY(-14px) translateX(25px);
+  width: 150px;
+  color: #c9605d;
+}
+
+
+.color-alive {
+  background-color: #611f1d;
+  border-left: 4px solid #4c1616;
+  border-right: 5px solid #6f2727; 
+}
+
+.color-alive h2 {
+  padding: 0;
+  font-size: 1em;
+  transform-origin: 0% 0%;
+  transform: rotate(0.25turn) translateY(-35px);
+  width: 170px;
+  color: white;
+  border-left: 1px #59ffff; 
+  border-right: 1px #ff1010;
+}
+
+
+
+.color-dream {
+  background-color: #e0b67c;
+  border-left: 5px solid #c6946f;
+  border-right: 2px solid #cfd0c9;
+}
+
+.color-dream h2 {
+  padding: 0;
+  font-size: 1em;
+  transform-origin: 0% 0%;
+  transform: rotate(0.25turn) translateY(-35px);
+  width: 170px;
+  color: #3d3c3b; 
+}
+
+
+.color-fill {
+  background-color: #b4c2cb;
+  border-left: 4px solid #aebbc5;
+  border-right: 4px solid #c4cdd5;
+}
+
+.color-fill h2 {
+  padding: 0;
+  font-size: 1em;
+  transform-origin: 0% 0%;
+  transform: rotate(0.25turn) translateY(-35px);
+  width: 170px;
+  color: #1f2021; 
+}
+
+
+
+.color-frow {
+  background-color: #fffcf4;
+  border-bottom: 5px solid #e4d3b9;
+  border-top: 3px solid #fffdfa;
+}
+
+.color-frow h2 {
+  padding: 0;
+  font-size: 1.6em;
+  transform-origin: 0% 0%;
+  transform: rotate(10turn) translateY(-3px) translateX(5.5px);
+  width: 170px;
+  color: #a87a32;
+}
+
+
+.color-growing {
+  background-color: #fffae9;
+  border-left: 4px solid #ebe2c5;
+  border-right: 6px solid #fcf7e7;
+}
+
+.color-growing h2 {
+    font-size: 1em;
+    transform-origin: 0% 0%;
+    transform: rotate(0.25turn) translateY(-35px);
+    width: 170px;
+    color: #981342; 
+}
+
+
+.color-lola {
+  background-color: #f0e4dc;
+  border-left: 3px solid #dfc390;
+  border-right: 2px solid #ede4db;
+}
+
+.color-lola h2 {
+  font-size: 1em;
+  transform-origin: 0% 0%;
+  transform: rotate(0.25turn) translateY(-35px);
+  width: 170px;
+  color: #c8654f; 
+}
+
+
+
+.color-noi {
+  background-color: #a6cfff;
+  border-left: 3px solid #6f84a3;
+  border-right: 3px solid #f2f6ff;
+}
+
+.color-noi h2 {
+  padding: 0;
+  font-size: 1em;
+  transform-origin: 0% 0%;
+  transform: rotate(0.25turn) translateY(-55px);
+  width: 161px;
+  color: white;
+}
+
+
+
+.color-mr {
+  background-color: #cf83a9;
+  border-left: 3px solid #c36d98;
+  border-right: 3px solid #da94b7;
+}
+
+.color-mr h2 {
+  padding: 0;
+  font-size: 1em;
+  transform-origin: 0% 0%;
+  transform: rotate(0.25turn) translateY(-35px);
+  width: 170px;
+  color: #ffffff
+}
+
+
+
+.color-seen {
+  background-color: #faa383;
+  border-left: 3.5px solid #ff7b00;
+  border-right: 1.5px solid #ffc79a; 
+}
+
+.color-seen h2 {
+  padding: 0;
+  font-size: 1em;
+  transform-origin: 0% 0%;
+  transform: rotate(0.25turn) translateY(-35px);
+  width: 170px;
+  color: #2c251e
+  
+}
+/* COLORS OF THE BOOKS & FONTS */
+
+
+
+
+
+
+.tops {
+  margin-left: 100px; 
+}
+
+.move {
+  margin-right: 48px;
+}
+
+/* for Frog and Crow */
+.moves {
+  margin-right: 10px;
+  margin-top: 160px;
+}
+
+.movez {
+  margin-right: 21.5px;
+}

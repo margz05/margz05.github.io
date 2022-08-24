@@ -1,0 +1,272 @@
+.book {
+    transition: opacity 0.4 0.2s;
+}
+
+body {
+    background-image: url(Background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.page {
+    width: 80vw;
+    height: 44vw;
+    background-color: #111111;
+    float: left;
+    background: left top no-repeat;
+    background-size: cover;
+  }
+
+.page:nth-child(even) {
+    clear: both;
+}
+
+.book {
+    perspective: 250vw;
+}
+
+.book .pages {
+    width: 80vw;
+    height: 55vw;
+    position: relative;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border-radius: 10vw;
+/*box-shadow: 0 0 0 1px #e3dfd8;*/
+}
+
+.book .page {
+    float: none;
+    clear: none;
+    margin: 0;
+    position: absolute;
+    top: 15%;  
+    left: 53%;   
+    width: 53%; /* THIS ONE THIS ONE */
+    height: 47%;
+    transform-origin: 0 0;
+    transition: transform 1.4s;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    user-select: none;
+    background-color: #ecf3fc;
+    background-size: 100%;
+}
+
+.book .page:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.7s;
+    z-index: 2;
+}
+
+.book .page:nth-child(odd) {
+    pointer-events: all;
+    transform: rotateY(0deg);
+    right: 0;
+    border-radius: 0 4px 4px 0;
+    background-image: linear-gradient(to right, rgba(0,0,0,.15) 0%, rgba(0,0,0,0) 10%);
+    padding: 12px;
+}
+
+.book .page:nth-child(odd):hover {
+    transform: rotateY(-15deg);
+}
+
+.book .page:nth-child(odd):hover:before {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.book .page:nth-child(odd):before {
+    background: rgba(0, 0, 0, 0);
+}
+
+.book .page:nth-child(even) {
+    pointer-events: none;
+    transform: rotateY(180deg);
+    transform-origin: 100% 0;
+    left: 0;
+    border-radius: 4px 0 0 4px;
+    border-color: black;
+    background-image: linear-gradient(to left, rgba(0,0,0,.12) 0%, rgba(0,0,0,0) 10%);
+}
+
+.book .page:nth-child(even):before {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.book .page.grabbing {
+    transition: none;
+}
+
+.book .page.flipped:nth-child(odd) {
+    pointer-events: none;
+    transform: rotateY(-180deg);
+}
+
+.book .page.flipped:nth-child(odd):before {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.book .page.flipped:nth-child(even) {
+    pointer-events: all;
+    transform: rotateY(0deg);
+    padding: 12px;
+}
+
+.book .page.flipped:nth-child(even):hover {
+    transform: rotateY(15deg);
+}
+
+.book .page.flipped:nth-child(even):hover:before {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.book .page.flipped:nth-child(even):before {
+    background: rgba(0, 0, 0, 0);
+}
+
+*,
+* :before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+  body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+    line-height: 1.5em;
+  }
+  .page:nth-child(odd){
+    background-position: right top;
+}
+
+#cover {
+    background-image: url(Pages/1.png);
+    background-repeat: no-repeat;
+}
+
+#credits {
+    background-image: url(Pages/2.png);
+    background-repeat: no-repeat;
+}
+
+#pg_1 {
+    background-image: url(Pages/3.png);
+    background-repeat: no-repeat;
+}
+
+#pg_2 {
+    background-image: url(Pages/4.png);
+    background-repeat: no-repeat;
+}
+
+
+#pg_3 {
+    background-image: url(Pages/5.png);
+    background-repeat: no-repeat;
+}
+
+#pg_4 {
+    background-image: url(Pages/6.png);
+    background-repeat: no-repeat;
+}
+
+#pg_5 {
+    background-image: url(Pages/7.png);
+    background-repeat: no-repeat;
+}
+
+#pg_6 {
+    background-image: url(Pages/8.png);
+    background-repeat: no-repeat;
+}
+
+#pg_7 {
+    background-image: url(Pages/9.png);
+    background-repeat: no-repeat;
+}
+
+#pg_8 {
+    background-image: url(Pages/10.png);
+    background-repeat: no-repeat;
+
+}
+
+#pg_9 {
+    background-image: url(Pages/11.png);
+    background-repeat: no-repeat;
+}
+
+#pg_10 {
+    background-image: url(Pages/12.png);
+    background-repeat: no-repeat;
+}
+
+#pg_11 {
+    background-image: url(Pages/13.png);
+    background-repeat: no-repeat;
+}
+
+#pg_12 {
+    background-image: url(Pages/14.png);
+    background-repeat: no-repeat;
+}
+
+#pg_13 {
+    background-image: url(Pages/15.png);
+    background-repeat: no-repeat;
+}
+
+#pg_14 {
+    background-image: url(Pages/16.png);
+    background-repeat: no-repeat;
+}
+
+#pg_15 {
+    background-image: url(Pages/17.png);
+    background-repeat: no-repeat;
+}
+
+#pg_16 {
+    background-image: url(Pages/18.png);
+    background-repeat: no-repeat;
+}
+
+#pg_17 {
+    background-image: url(Pages/19.png);
+    background-repeat: no-repeat;
+}
+
+#pg_18 {
+    background-image: url(Pages/20.png);
+    background-repeat: no-repeat;
+}
+
+#pg_19 {
+    background-image: url(Pages/21.png);
+    background-repeat: no-repeat;
+}
+
+#pg_20 {
+    background-image: url(Pages/22.png);
+    background-repeat: no-repeat;
+}
+
+#clear {
+    background-image: url(Pages/21.png);
+    background-repeat: no-repeat;
+}

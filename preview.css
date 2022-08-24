@@ -1,0 +1,723 @@
+/* FOR THE COLOPHON / CONTAINER 
+    /* ORIGINAL ORIGINAL ORIGINAL ORIGINAL ORIGINAL */
+    .book .colophon {
+        width: 140px;
+        height: 200px;
+        float: left;
+        display: block;
+        color: skyblue;
+        background-color: blue;
+        color: goldenrod;
+        background-color: lightgreen;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        opacity: 0;
+        transform: rotateY(60.5deg);        /* <--- GO BACK TO THIS BESTIE transform: rotateY(92.5deg); translateX(100%); */
+        background-image: url(alive.png);
+        background-size: contain;
+        position: absolute;
+          }
+       
+        
+        
+        .book .colophon .container {
+        position: relative; /* USED TO BE RELATIVE */
+        width: 100%;
+        height: 170px;
+        padding: 10.5px;
+          }
+    
+    
+          /* MOVES THE COVER HORIZONTALLY */
+        .book:hover .colophon {
+        opacity: 1;
+        transform: translateX(17.85px);
+      }
+    
+      .book .front-cover,
+      .book .back-cover,
+      .book .colophon {
+        transition: all 0.33s ease-in-out;
+        border-radius: 1px;
+      }
+ /* ORIGINAL ORIGINAL ORIGINAL ORIGINAL ORIGINAL */  /* ORIGINAL ORIGINAL ORIGINAL ORIGINAL ORIGINAL */
+  /* ORIGINAL ORIGINAL ORIGINAL ORIGINAL ORIGINAL */  /* ORIGINAL ORIGINAL ORIGINAL ORIGINAL ORIGINAL */
+
+
+
+       /* ADVENTURES OF CHARLI THE DOG ADVENTURES OF CHARLI THE DOG */
+    .book-lefttilt {
+        position: relative;
+        transform: rotate(327deg);
+        left: -15px;
+        margin-top: 23px;
+      }
+
+      .colophonadv {
+        /* display: inline-block; */
+        position: absolute;
+        height: 200px;
+        width: 35px;
+        color: goldenrod;
+        text-align: left;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.8em;
+        line-height: 1.25;
+        transition: all 0.33s ease-in-out;
+        perspective: 800px;
+        transform: translateX(-8.925px); /* JUST FOR ITS INITIAL PLACEMENT */
+        border-radius: 1px;
+        /* ADDED FROM THE BOOKSHELF CODE */
+        float: left;
+        color: white;
+        font-size: 0.9em;
+        font-family: Verdana, sans-serif;
+        transition: transform 0.4s ease;
+      }
+
+      .book .colophonadv {
+        width: 155px;
+        height: 200px;
+        float: left;
+        display: block;
+        color: skyblue;
+        background-color: blue;
+        color: goldenrod;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        opacity: 0;
+        transform: rotateY(60.5deg);        /* <--- GO BACK TO THIS BESTIE transform: rotateY(92.5deg); translateX(100%); */
+        background-image: url(Book_Covers/Adventures\ of\ Charli\ the\ dog.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+          }
+       
+        
+        
+        .book .colophonadv .container {
+        position: absolute; /* USED TO BE RELATIVE */
+        width: 100%;
+        height: 170px;
+        padding: 10.5px;
+          }
+    
+    
+          /* MOVES THE COVER HORIZONTALLY */
+        .book:hover .colophonadv {
+        opacity: 1;
+        transform: translateX(-105.85px);
+      }
+    
+    
+    
+      .book .front-cover,
+      .book .back-cover,
+      .book .colophonadv {
+        transition: all 0.33s ease-in-out;
+        border-radius: 1px;
+      }
+
+
+      .book .colophonadv .container {
+        position: relative; /* USED TO BE RELATIVE */
+        width: 100%;
+        height: 170px;
+        padding: 10.5px;
+      }
+
+      .book:hover {
+        box-shadow: 0px 0px 0px 3px rgba(255, 225, 40, 0.9), 0px 1px 10px 3px rgba(0, 0, 0, 0.7);
+      }
+
+
+
+
+
+        /* ALIVE AGAIN ALIVE AGAIN ALIVE AGAIN ALIVE AGAIN ALIVE AGAIN ALIVE AGAIN */
+          .colophonalive {
+            /* display: inline-block; */
+            position: relative;
+            height: 200px;
+            width: 35px;
+            color: goldenrod;
+            text-align: left;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.8em;
+            line-height: 1.25;
+            transition: all 0.33s ease-in-out;
+            perspective: 800px;
+            transform: translateX(-8.925px); /* JUST FOR ITS INITIAL PLACEMENT */
+            border-radius: 1px;
+            /* ADDED FROM THE BOOKSHELF CODE */
+            float: left;
+            color: white;
+            font-size: 0.9em;
+            font-family: Verdana, sans-serif;
+            transition: transform 0.4s ease;
+          }
+    
+
+        .book .colophonalive {
+            width: 155px;
+            height: 200px;
+            float: left;
+            display: block;
+            color: skyblue;
+            background-color: blue;
+            color: goldenrod;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            opacity: 0;
+            transform: rotateY(60.5deg);        /* <--- GO BACK TO THIS BESTIE transform: rotateY(92.5deg); translateX(100%); */
+            background-image: url(Book_Covers/alive\ again.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+              }
+           
+            
+            
+            .book .colophonalive .container {
+            position: relative; /* USED TO BE RELATIVE */
+            width: 100%;
+            height: 170px;
+            padding: 10.5px;
+              }
+        
+        
+              /* MOVES THE COVER HORIZONTALLY */
+            .book:hover .colophonalive {
+            opacity: 1;
+            transform: translateX(-115.85px);
+          }
+        
+        
+        
+          .book .front-cover,
+          .book .back-cover,
+          .book .colophonalive {
+            transition: all 0.33s ease-in-out;
+            border-radius: 1px;
+          }
+    
+    
+          .book .colophonalive .container {
+            position: relative; /* USED TO BE RELATIVE */
+            width: 100%;
+            height: 170px;
+            padding: 10.5px;
+          }
+
+          .book:hover {
+            box-shadow: 0px 0px 0px 3px rgba(255, 225, 40, 0.9), 0px 1px 10px 3px rgba(0, 0, 0, 0.7);
+          }
+
+
+          
+
+      /*DREAM OF YOU DREAM OF YOU DREAM OF YOU DREAM OF YOU DREAM OF YOU*/
+        .book .colophondream {
+          width: 144px;
+          height: 200px;
+          float: left;
+          display: block;
+          color: skyblue;
+          background-color: blue;
+          color: goldenrod;
+          position: absolute;
+          top: 0;
+          left: 0;
+          text-align: center;
+          border-top-right-radius: 2px;
+          border-bottom-right-radius: 2px;
+          opacity: 0;
+          transform: rotateY(60.5deg);        /* <--- GO BACK TO THIS BESTIE transform: rotateY(92.5deg); translateX(100%); */
+          background-image: url(Book_Covers/Dream\ of\ You.png);
+          background-size: contain;
+          position: absolute;
+          background-repeat: no-repeat;
+          background-size: 100%;
+            }
+        
+          
+          
+          .book .colophondream .container {
+          position: relative; /* USED TO BE RELATIVE */
+          width: 100%;
+          height: 170px;
+          padding: 10.5px;
+            }
+      
+      
+            /* MOVES THE COVER HORIZONTALLY */
+          .book:hover .colophondream {
+          opacity: 1;
+          transform: translateX(-1.85px);
+        }
+      
+      
+      
+        .book .front-cover,
+        .book .back-cover,
+        .book .colophondream {
+          transition: all 0.33s ease-in-out;
+          border-radius: 1px;
+        }
+
+        .book:hover {
+          box-shadow: 0px 0px 0px 3px rgba(255, 225, 40, 0.9), 0px 1px 10px 3px rgba(0, 0, 0, 0.7);
+        }
+
+
+      /*FILL UP THE JAR FILL UP THE JAR FILL UP THE JAR FILL UP THE JAR FILL UP THE JAR*/
+        .book .colophonjar {
+          width: 140px;
+          height: 200px;
+          float: left;
+          display: block;
+          color: skyblue;
+          background-color: blue;
+          color: goldenrod;
+          position: absolute;
+          top: 0;
+          left: 0;
+          text-align: center;
+          border-top-right-radius: 2px;
+          border-bottom-right-radius: 2px;
+          opacity: 0;
+          transform: rotateY(60.5deg);/* <--- GO BACK TO THIS BESTIE transform: rotateY(92.5deg); translateX(100%); */
+          background-image: url(Book_Covers/Fill\ up\ the\ Jar.png);
+          background-size: contain;
+          position: absolute;
+          background-repeat: no-repeat;
+          background-size: 100%;
+            }
+        
+          
+          
+          .book .colophonjar .container {
+          position: relative; /* USED TO BE RELATIVE */
+          width: 100%;
+          height: 170px;
+          padding: 10.5px;
+            }
+      
+      
+            /* MOVES THE COVER HORIZONTALLY */
+          .book:hover .colophonjar {
+          opacity: 1;
+          transform: translateX(-100.85px);
+        }
+      
+      
+      
+        .book .front-cover,
+        .book .back-cover,
+        .book .colophonjar {
+          transition: all 0.33s ease-in-out;
+          border-radius: 1px;
+        }
+
+        .book:hover {
+          box-shadow: 0px 0px 0px 3px rgba(255, 225, 40, 0.9), 0px 1px 10px 3px rgba(0, 0, 0, 0.7);
+        }
+
+
+        /* FROG AND CROW FROG AND CROW FROG AND CROW FROG AND CROW FROG AND CROW*/
+        .laid {
+            height: 40px;
+            width: 176px;
+            float: left;
+            color: white;
+            font-size: 0.6em;
+            font-family: Verdana, sans-serif;
+            margin-left: -80px;
+            margin-bottom: 1px;
+            margin-top: 159.5px;
+            transition: scale(1.05);
+            transition: transform 0.4s ease;
+            position: relative;
+            line-height: 1.25;
+            transition: all 0.33s ease-in-out;
+            perspective: 800px;
+            transform: translateX(-8.925px); /* JUST FOR ITS INITIAL PLACEMENT */
+            border-radius: 1px;
+        }
+
+
+        .laid .colophonfrow {
+            width: 176px;
+            height: 176px;
+            float: left;
+            display: block;
+            color: skyblue;
+            background-color: blue;
+            color: goldenrod;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            opacity: 0;
+            transform: rotateY(60.5deg);/* <--- GO BACK TO THIS BESTIE transform: rotateY(92.5deg); translateX(100%); */
+            background-image: url(Book_Covers/frog\ and\ crow.png);
+            background-size: contain;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 100%;
+              }
+          
+            
+            
+            .laid .colophonfrow .container {
+            position: relative; /* USED TO BE RELATIVE */
+            width: 100%;
+            height: 170px;
+            padding: 10.5px;
+              }
+        
+        
+              /* MOVES THE COVER HORIZONTALLY */
+            .laid:hover .colophonfrow {
+            opacity: 1;
+            transform: translateY(-142.85px);
+          }
+        
+    
+          .laid .front-cover,
+          .laid .back-cover,
+          .laid .colophonfrow {
+            transition: all 0.33s ease-in-out;
+            border-radius: 1px;
+          }
+
+          .laid:hover {
+            box-shadow: 0px 0px 0px 3px rgba(255, 225, 40, 0.9), 0px 1px 10px 3px rgba(0, 0, 0, 0.7);
+          }
+
+
+       /* GROWING UP IS HARD GROWING UP IS HARD GROWING UP IS HARD GROWING UP IS HARD GROWING UP IS HARD*/
+       .book .colophongrowing {
+        width: 150px;
+        height: 200px;
+        float: left;
+        display: block;
+        color: skyblue;
+        background-color: blue;
+        color: goldenrod;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        opacity: 0;
+        transform: rotateY(60.5deg);/* <--- GO BACK TO THIS BESTIE transform: rotateY(92.5deg); translateX(100%); */
+        background-image: url(Book_Covers/Growing\ up\ is\ Hard.png);
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: 100%;
+          }
+      
+        
+        
+        .book .colophongrowing .container {
+        position: relative; /* USED TO BE RELATIVE */
+        width: 100%;
+        height: 170px;
+        padding: 10.5px;
+          }
+    
+    
+          /* MOVES THE COVER HORIZONTALLY */
+        .book:hover .colophongrowing {
+        opacity: 1;
+        transform: translateX(1.85px);
+      }
+    
+    
+    
+      .book .front-cover,
+      .book .back-cover,
+      .book .colophongrowing {
+        transition: all 0.33s ease-in-out;
+        border-radius: 1px;
+      }
+
+
+      
+      .book:hover {
+        box-shadow: 0px 0px 0px 3px rgba(255, 225, 40, 0.9), 0px 1px 10px 3px rgba(0, 0, 0, 0.7);
+      }
+
+
+
+       /* LOVE, LOLA  LOVE, LOLA LOVE, LOLA LOVE, LOLA LOVE, LOLA LOVE, LOLA LOVE, LOLA LOVE, LOLA LOVE, LOLA*/
+       .book-tilting {
+        transform: rotate(342deg);
+        position: relative;
+        right: 15px;
+      }
+       
+       .book .colophonlola {
+        width: 140px;
+        height: 200px;
+        float: left;
+        display: block;
+        color: skyblue;
+        background-color: blue;
+        color: goldenrod;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        opacity: 0;
+        transform: rotateY(60.5deg);/* <--- GO BACK TO THIS BESTIE transform: rotateY(92.5deg); translateX(100%); */
+        background-image: url(Book_Covers/Love\,\ Lola.png);
+        background-size: contain;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: 100%;
+          }
+      
+        
+        
+        .book .colophonlola .container {
+        position: relative; /* USED TO BE RELATIVE */
+        width: 100%;
+        height: 170px;
+        padding: 10.5px;
+          }
+    
+    
+          /* MOVES THE COVER HORIZONTALLY */
+        .book:hover .colophonlola {
+        opacity: 1;
+        transform: translateX(-1.85px);
+      }
+    
+    
+    
+      .book .front-cover,
+      .book .back-cover,
+      .book .colophonlola {
+        transition: all 0.33s ease-in-out;
+        border-radius: 1px;
+      }
+
+
+      .book:hover {
+        box-shadow: 0px 0px 0px 3px rgba(255, 225, 40, 0.9), 0px 1px 10px 3px rgba(0, 0, 0, 0.7);
+      }
+
+
+        /* MEE NOI'S SAMPAGUITA ADVENTURES MEE NOI'S SAMPAGUITA ADVENTURES MEE NOI'S SAMPAGUITA ADVENTURES MEE NOI'S SAMPAGUITA ADVENTURES */
+       .noi {
+        height: 161px;
+        width: 56px;
+        float: left;
+        color: white;
+        font-size: 0.9em;
+        font-family: Verdana, sans-serif;
+        right: -7px;
+        margin-bottom: 50px;
+        margin-top: 14px;
+        transition: scale(1.05);
+        transition: transform 0.4s ease;
+        position: relative;
+        line-height: 1.25;
+        transition: all 0.33s ease-in-out;
+        perspective: 800px;
+        transform: translateX(-8.925px); /* JUST FOR ITS INITIAL PLACEMENT */
+        border-radius: 1px;
+       }
+    
+        
+        .noi .colophonmee {
+            width: 264px;
+            height: 161px;
+            float: left;
+            display: block;
+            background-image: url(Book_Covers/Sampa.png);
+            background-size: 200px 140px;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: goldenrod;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            opacity: 0;
+            transform: rotateY(60.5deg);/* <--- GO BACK TO THIS BESTIE transform: rotateY(92.5deg); translateX(100%); */
+              }
+         
+            
+            
+            .noi .colophonmee .container {
+            position: relative; /* USED TO BE RELATIVE */
+            width: 200px;
+            height: 140px;
+            padding: 10.5px;
+              }
+        
+        
+              /* MOVES THE COVER HORIZONTALLY */
+            .noi:hover .colophonmee {
+            opacity: 1;
+            transform: translateX(-205.85px);
+          }
+        
+        
+        
+          .noi .front-cover,
+          .noi .back-cover,
+          .noi .colophonmee {
+            transition: all 0.33s ease-in-out;
+            border-radius: 1px;
+          }
+    
+          .noi:hover {
+            box-shadow: 0px 0px 0px 3px rgba(255, 225, 40, 0.9), 0px 1px 10px 3px rgba(0, 0, 0, 0.7);
+          }
+    
+
+          .down {
+            bottom: -39px;
+          }
+
+    
+           /* MISTER AND I MISTER AND I MISTER AND I MISTER AND I MISTER AND I MISTER AND I*/
+        .book .colophonmister {
+            width: 125px;
+            height: 200px;
+            float: left;
+            display: block;
+            color: skyblue;
+            background-color: blue;
+            color: goldenrod;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            opacity: 0;
+            transform: rotateY(60.5deg);/* <--- GO BACK TO THIS BESTIE transform: rotateY(92.5deg); translateX(100%); */
+            background-image: url(Book_Covers/Book\ Cover\ Mister\ And\ I.png);
+            background-size: contain;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: 100%;
+              }
+          
+            
+            
+            .book .colophonmister .container {
+            position: relative; /* USED TO BE RELATIVE */
+            width: 100%;
+            height: 170px;
+            padding: 10.5px;
+              }
+        
+        
+              /* MOVES THE COVER HORIZONTALLY */
+            .book:hover .colophonmister {
+            opacity: 1;
+            transform: translateX(1.85px);
+          }
+        
+        
+        
+          .book .front-cover,
+          .book .back-cover,
+          .book .colophonmister {
+            transition: all 0.33s ease-in-out;
+            border-radius: 1px;
+          }
+    
+          .book:hover {
+            box-shadow: 0px 0px 0px 3px rgba(255, 225, 40, 0.9), 0px 1px 10px 3px rgba(0, 0, 0, 0.7);
+          }
+
+
+
+ /* UNSEEN UNSEEN UNSEEN UNSEEN UNSEEN UNSEEN UNSEEN UNSEEN  UNSEEN  */
+ .book-righttilt{
+  transform: rotate(19deg);
+  position: relative;
+  right: 15px;
+  bottom: 3px;
+}
+
+ .book .colophonunseen {
+    width: 143px;
+    height: 191px;
+    float: left;
+    display: block;
+    color: skyblue;
+    background-color: blue;
+    color: goldenrod;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    opacity: 0;
+    transform: rotateY(60.5deg);/* <--- GO BACK TO THIS BESTIE transform: rotateY(92.5deg); translateX(100%); */
+    background-image: url(Book_Covers/Unseen.jpeg\ \(by\ Jana\).jpg);
+    background-size:auto;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+      }
+  
+    
+    
+    .book .colophonunseen .container {
+    position: relative; /* USED TO BE RELATIVE */
+    width: 100%;
+    height: 170px;
+    padding: 10.5px;
+      }
+
+
+      /* MOVES THE COVER HORIZONTALLY */
+    .book:hover .colophonunseen {
+    opacity: 1;
+    transform: translateX(0.5px);
+  }
+
+
+
+  .book .front-cover,
+  .book .back-cover,
+  .book .colophonunseen {
+    transition: all 0.33s ease-in-out;
+    border-radius: 1px;
+  }
+
+  .book:hover {
+    box-shadow: 0px 0px 0px 3px rgba(255, 225, 40, 0.9), 0px 1px 10px 3px rgba(0, 0, 0, 0.7);
+  }

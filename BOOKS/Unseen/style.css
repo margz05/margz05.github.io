@@ -1,0 +1,580 @@
+.book {
+    transition: opacity 0.4 0.2s;
+}
+
+body {
+    background-image: url(Background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.book {
+    z-index: 0;
+}
+
+.page {
+    width: 30vw;
+    height: 44vw;
+    background-color: #111111;
+    float: left;
+    background: left top no-repeat;
+    background-size: cover;
+  }
+
+.page:nth-child(even) {
+    clear: both;
+}
+
+.book {
+    perspective: 250vw;
+}
+
+.book .pages {
+    width: 63vw; /* double of the width sa baba */
+    height: 40vw; /* not really sure but its quite the same as the height sa baba */
+    position: relative;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border-radius: 4px;
+/*box-shadow: 0 0 0 1px #e3dfd8;*/
+}
+
+.book .page {
+    float: none;
+    clear: none;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 46%;
+    width: 46%;
+    height: 96.5%;
+    transform-origin: 0 0;
+    transition: transform 1.4s;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    user-select: none;
+    background-color: #ff7b00; /* #FBC278 */
+}
+
+.book .page:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.7s;
+    z-index: 2;
+}
+
+.book .page:nth-child(odd) {
+    pointer-events: all;
+    transform: rotateY(0deg);
+    right: 0;
+    border-radius: 0 4px 4px 0;
+    background-image: linear-gradient(to right, rgba(0,0,0,.15) 0%, rgba(0,0,0,0) 10%);
+    padding: 12px;
+}
+
+.book .page:nth-child(odd):hover {
+    transform: rotateY(-15deg);
+}
+
+.book .page:nth-child(odd):hover:before {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.book .page:nth-child(odd):before {
+    background: rgba(0, 0, 0, 0);
+}
+
+.book .page:nth-child(even) {
+    pointer-events: none;
+    transform: rotateY(180deg);
+    transform-origin: 100% 0;
+    left: 0;
+    border-radius: 4px 0 0 4px;
+    border-color: black;
+    background-image: linear-gradient(to left, rgba(0,0,0,.12) 0%, rgba(0,0,0,0) 10%);
+}
+
+.book .page:nth-child(even):before {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.book .page.grabbing {
+    transition: none;
+}
+
+.book .page.flipped:nth-child(odd) {
+    pointer-events: none;
+    transform: rotateY(-180deg);
+}
+
+.book .page.flipped:nth-child(odd):before {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.book .page.flipped:nth-child(even) {
+    pointer-events: all;
+    transform: rotateY(0deg);
+    padding: 12px;
+}
+
+.book .page.flipped:nth-child(even):hover {
+    transform: rotateY(15deg);
+}
+
+.book .page.flipped:nth-child(even):hover:before {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.book .page.flipped:nth-child(even):before {
+    background: rgba(0, 0, 0, 0);
+}
+
+*,
+* :before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+  body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+    line-height: 1.5em;
+  }
+  .page:nth-child(odd){
+    background-position: right top;
+}
+
+#cover {
+    background-image: url(Pages/1.png);
+    background-repeat: no-repeat;
+}
+
+#credits {
+    background-image: url(Pages/2.png);
+    background-repeat: no-repeat;
+}
+
+#pg_1 {
+    background-image: url(Pages/3.png);
+    background-repeat: no-repeat;
+}
+
+#pg_2 {
+    background-image: url(Pages/4.png);
+    background-repeat: no-repeat;
+}
+
+#pg_3 {
+    background-image: url(Pages/5.png);
+    background-repeat: no-repeat;
+}
+
+#pg_4 {
+    background-image: url(Pages/6.png);
+    background-repeat: no-repeat;
+}
+#pg_5 {
+    background-image: url(Pages/7.png);
+    background-repeat: no-repeat;
+}
+
+#pg_6 {
+    background-image: url(Pages/8.png);
+    background-repeat: no-repeat;
+}
+
+#pg_7 {
+    background-image: url(Pages/9.png);
+    background-repeat: no-repeat;
+}
+
+#pg_8 {
+    background-image: url(Pages/10.png);
+    background-repeat: no-repeat;
+
+}
+
+#pg_9 {
+    background-image: url(Pages/11.png);
+    background-repeat: no-repeat;
+
+}
+
+#pg_10 {
+    background-image: url(Pages/12.png);
+    background-repeat: no-repeat;
+
+}
+
+#pg_11 {
+    background-image: url(Pages/13.png);
+    background-repeat: no-repeat;
+}
+
+#pg_12 {
+    background-image: url(Pages/14.png);
+    background-repeat: no-repeat;
+}
+
+#pg_13 {
+    background-image: url(Pages/15.png);
+    background-repeat: no-repeat;
+}
+
+#pg_14 {
+    background-image: url(Pages/16.png);
+    background-repeat: no-repeat;
+}
+
+#pg_15 {
+    background-image: url(Pages/17.png);
+    background-repeat: no-repeat;
+}
+
+#pg_16 {
+    background-image: url(Pages/18.png);
+    background-repeat: no-repeat;
+}
+
+#pg_17 {
+    background-image: url(Pages/19.png);
+    background-repeat: no-repeat;
+}
+
+#pg_18 {
+    background-image: url(Pages/20.png);
+    background-repeat: no-repeat;
+}
+
+#pg_19 {
+    background-image: url(Pages/21.png);
+    background-repeat: no-repeat;
+}
+
+#pg_20 {
+    background-image: url(Pages/22.png);
+    background-repeat: no-repeat;
+}
+
+#pg_21 {
+    background-image: url(Pages/23.png);
+    background-repeat: no-repeat;
+}
+
+#pg_22 {
+    background-image: url(Pages/24.png);
+    background-repeat: no-repeat;
+}
+
+#pg_23 {
+    background-image: url(Pages/25.png);
+    background-repeat: no-repeat;
+}
+
+#pg_24 {
+    background-image: url(Pages/26.png);
+    background-repeat: no-repeat;
+}
+
+#pg_25 {
+    background-image: url(Pages/27.png);
+    background-repeat: no-repeat;
+}
+
+#pg_26 {
+    background-image: url(Pages/28.png);
+    background-repeat: no-repeat;
+}
+
+#pg_27 {
+    background-image: url(Pages/29.png);
+    background-repeat: no-repeat;
+}
+
+#pg_28 {
+    background-image: url(Pages/30.png);
+    background-repeat: no-repeat;
+}
+
+#pg_29 {
+    background-image: url(Pages/31.png);
+    background-repeat: no-repeat;
+}
+
+#pg_30 {
+    background-image: url(Pages/32.png);
+    background-repeat: no-repeat;
+}
+
+#pg_31 {
+    background-image: url(Pages/33.png);
+    background-repeat: no-repeat;
+}
+
+#pg_32 {
+    background-image: url(Pages/34.png);
+    background-repeat: no-repeat;
+}
+
+#pg_33 {
+    background-image: url(Pages/35.png);
+    background-repeat: no-repeat;
+}
+
+#pg_34 {
+    background-image: url(Pages/36.png);
+    background-repeat: no-repeat;
+}
+
+#pg_35 {
+    background-image: url(Pages/37.png);
+    background-repeat: no-repeat;
+}
+
+#pg_36 {
+    background-image: url(Pages/38.png);
+    background-repeat: no-repeat;
+}
+
+#pg_37 {
+    background-image: url(Pages/39.png);
+    background-repeat: no-repeat;
+}
+
+#pg_38 {
+    background-image: url(Pages/40.png);
+    background-repeat: no-repeat;
+}
+
+#pg_39 {
+    background-image: url(Pages/41.png);
+    background-repeat: no-repeat;
+}
+
+#pg_40 {
+    background-image: url(Pages/42.png);
+    background-repeat: no-repeat;
+}
+
+#pg_41 {
+    background-image: url(Pages/43.png);
+    background-repeat: no-repeat;
+}
+
+#pg_42 {
+    background-image: url(Pages/44.png);
+    background-repeat: no-repeat;
+}
+
+#pg_43 {
+    background-image: url(Pages/45.png);
+    background-repeat: no-repeat;
+}
+
+#pg_44 {
+    background-image: url(Pages/46.png);
+    background-repeat: no-repeat;
+}
+
+#pg_45 {
+    background-image: url(Pages/47.png);
+    background-repeat: no-repeat;
+}
+
+#pg_46 {
+    background-image: url(Pages/48.png);
+    background-repeat: no-repeat;
+}
+
+#pg_47 {
+    background-image: url(Pages/49.png);
+    background-repeat: no-repeat;
+}
+
+#pg_48 {
+    background-image: url(Pages/50.png);
+    background-repeat: no-repeat;
+}
+
+#pg_49 {
+    background-image: url(Pages/51.png);
+    background-repeat: no-repeat;
+}
+
+#pg_50 {
+    background-image: url(Pages/52.png);
+    background-repeat: no-repeat;
+}
+
+#pg_51 {
+    background-image: url(Pages/53.png);
+    background-repeat: no-repeat;
+}
+
+#pg_52 {
+    background-image: url(Pages/54.png);
+    background-repeat: no-repeat;
+}
+
+#pg_53 {
+    background-image: url(Pages/55.png);
+    background-repeat: no-repeat;
+}
+
+#pg_54 {
+    background-image: url(Pages/56.png);
+    background-repeat: no-repeat;
+}
+
+#pg_55 {
+    background-image: url(Pages/57.png);
+    background-repeat: no-repeat;
+}
+
+#pg_56 {
+    background-image: url(Pages/58.png);
+    background-repeat: no-repeat;
+}
+
+#pg_57 {
+    background-image: url(Pages/59.png);
+    background-repeat: no-repeat;
+}
+
+#pg_58 {
+    background-image: url(Pages/60.png);
+    background-repeat: no-repeat;
+}
+
+#pg_59 {
+    background-image: url(Pages/61.png);
+    background-repeat: no-repeat;
+}
+
+#pg_60 {
+    background-image: url(Pages/62.png);
+    background-repeat: no-repeat;
+}
+
+#pg_61 {
+    background-image: url(Pages/63.png);
+    background-repeat: no-repeat;
+}
+
+#pg_62 {
+    background-image: url(Pages/64.png);
+    background-repeat: no-repeat;
+}
+
+#pg_63 {
+    background-image: url(Pages/65.png);
+    background-repeat: no-repeat;
+}
+
+#pg_64 {
+    background-image: url(Pages/66.png);
+    background-repeat: no-repeat;
+}
+
+#pg_65 {
+    background-image: url(Pages/67.png);
+    background-repeat: no-repeat;
+}
+
+#pg_66 {
+    background-image: url(Pages/68.png);
+    background-repeat: no-repeat;
+}
+
+#pg_67 {
+    background-image: url(Pages/69.png);
+    background-repeat: no-repeat;
+}
+
+#pg_68 {
+    background-image: url(Pages/70.png);
+    background-repeat: no-repeat;
+}
+
+#pg_69 {
+    background-image: url(Pages/71.png);
+    background-repeat: no-repeat;
+}
+
+#pg_70 {
+    background-image: url(Pages/72.png);
+    background-repeat: no-repeat;
+}
+
+#pg_71 {
+    background-image: url(Pages/73.png);
+    background-repeat: no-repeat;
+}
+
+#pg_72 {
+    background-image: url(Pages/74.png);
+    background-repeat: no-repeat;
+}
+
+#pg_73 {
+    background-image: url(Pages/75.png);
+    background-repeat: no-repeat;
+}
+
+#pg_74 {
+    background-image: url(Pages/76.png);
+    background-repeat: no-repeat;
+}
+
+#pg_75 {
+    background-image: url(Pages/77.png);
+    background-repeat: no-repeat;
+}
+
+#pg_76 {
+    background-image: url(Pages/78.png);
+    background-repeat: no-repeat;
+}
+
+#pg_77 {
+    background-image: url(Pages/79.png);
+    background-repeat: no-repeat;
+}
+
+#pg_78 {
+    background-image: url(Pages/80.png);
+    background-repeat: no-repeat;
+}
+
+#pg_79 {
+    background-image: url(Pages/81.png);
+    background-repeat: no-repeat;
+}
+
+#pg_80 {
+    background-image: url(Pages/82.png);
+    background-repeat: no-repeat;
+}
+
+#pg_81 {
+    background-image: url(Pages/83.png);
+    background-repeat: no-repeat;
+}
+
+#pg_82 {
+    background-image: url(Pages/84.png);
+    background-repeat: no-repeat; 
+}
